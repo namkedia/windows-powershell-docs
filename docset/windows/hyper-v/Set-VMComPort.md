@@ -21,7 +21,7 @@ ms.assetid: FC88D1CB-36AC-4B0D-B86E-199C2B8DF894
 # Set-VMComPort
 
 ## SYNOPSIS
-Configures the COM port of a virtual machine.
+Configures the COM port of a virtual machine. 
 
 ## SYNTAX
 
@@ -55,6 +55,8 @@ PS C:\> Set-VMComPort TestVM 2 \\.\pipe\TestPipe
 ```
 
 Configure the second COM port on virtual machine TestVM to connect to named pipe TestPipe on the local computer.
+
+Note: This does not create the named pipe on the local computer. You will have to write your own application to create a named pipe. 
 
 ## PARAMETERS
 
